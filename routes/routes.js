@@ -180,6 +180,7 @@ router.route('/course/update/:id').patch((req, res) => {
     const courseData = {
         c_name: req.body.c_name,
         c_description: req.body.c_description,
+        c_credits:req.body.c_credits,
         c_thumbnail: req.body.c_thumbnail,
         classification: req.body.classification,
         visibility: false,
